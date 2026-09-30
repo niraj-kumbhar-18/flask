@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electricity Bill</title>
+</head>
+<body>
+<h2>Electricity Bill Form</h2>
+{% with messages = get_flashed_messages() %}
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+{% endwith %}
+<form method="POST">
+Consumer Name: <input type="text" name="name"><br><br>
+Consumer Number: <input type="text" name="consumer_no"><br><br>
+Units Consumed: <input type="text" name="units"><br><br>
+<input type="submit" value="Calculate Bill">
+</form>
+</body>
+</html>

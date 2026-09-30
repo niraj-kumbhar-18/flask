@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Website</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+<h1>ABC College</h1>
+<a href="/">Home</a>
+<a href="/student">Student</a>
+</header>
+{% block content %}
+{% endblock %}
+<footer>
+<p>Copyright 2026</p>
+</footer>
+</body>
+</html>

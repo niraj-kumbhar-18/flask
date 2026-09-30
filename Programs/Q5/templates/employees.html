@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Employee Details</h2>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Department</th>
+<th>Experience</th>
+<th>Category</th>
+</tr>
+{% for emp in employees %}
+<tr>
+<td>{{ emp.name }}</td>
+<td>{{ emp.department }}</td>
+<td>{{ emp.experience }}</td>
+<td>
+{% if emp.experience < 2 %}
+Fresher
+{% elif emp.experience < 5 %}
+Experienced
+{% else %}
+Senior
+{% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
