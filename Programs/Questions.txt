@@ -1,0 +1,85 @@
+
+Q.1 — Flask Questions [20 Marks]
+1.
+Create a Flask application with the following static routes:
+i) /
+ii) /about
+iii) /contact
+Display an appropriate message on each webpage.
+
+2.
+Create a dynamic URL route using an integer parameter:
+/student/<int:roll_no>/<name>
+The route should accept the student’s roll number and name through the URL and display the student details in a structured format.
+
+3.
+Create a Flask application that stores an employee’s details (Employee ID, Name, Department, Basic Salary) in predefined variables, calculates HRA (20%), DA (12%), TA (8%), PF (10%), Gross Salary and Net Salary, and displays a salary slip on the home page.
+gross_salary = basic_salary + hra + da + ta
+net_salary = gross_salary - pf
+
+4.
+Create a Flask application to develop a dynamic product information page using URL routing. Create a dynamic URL route
+/product/<product_name>/<int:price>/<category>
+that accepts product details through the URL and displays the product name, price, category, discount amount(10%), GST (18%), and final price after calculation on the webpage. Test the application by accessing the URL with different product values through the browser and verify the output.
+
+5.
+Create a Flask application with the following files:
+base.html
+home.html
+employees.html
+department.html
+Create employee data and use Jinja2 loops to display the records. Use conditional statements to categorize employees as Fresher, Experienced, or Senior based on experience. Use template inheritance and create a CSS file in static/css. Verify the application in the browser.
+
+6.
+Display Student Information using Jinja2 ,Create a Flask application with the following templates: base.html, home.html, student html .Create student data containing name, roll number, and course in app.py. Pass the data to student.html using Jinja2 variables and display the student information. Use template inheritance and create a CSS file in the static/CSS folder. Verify the output in the browser.
+
+7.
+Display HTML Template using Flask ,Create a Flask application with the following structure: templates/home.html Create a home.html template and display a ‘ welcome’ message using the render_template() function. Verify the output in the browser.
+
+8.
+Display Course List using Jinja2 Loop, Create a Flask application with the following templates: base.html, home.html, courses.html, Create a list of five courses in app.py. Use a Jinja2 for loop to display the courses in courses.html. Use template inheritance and create a CSS file in the static/CSS folder. Verify the output in the browser.
+
+9.
+Student Result using Jinja2 Conditional Statements ,Create a Flask application with the following templates:base.html,home.html,result.html .Create student name and percentage in app.py. Use Jinja2 conditional statements to display the result as Distinction, First Class, Second Class, Pass, or Fail according to the percentage. Use template inheritance and create a CSS file in the static/CSS folder. Verify the output in the browser.
+
+10.
+Apply CSS Styling using Static Folder . Create a Flask application with the following structure: templates/home.html and static/CSS/style.css .Create a home.html template and apply CSS styling using the style.css file in the static/CSS folder. Apply simple styling to the heading, paragraph, background, and text alignment. Verify the output in the browser.
+
+11.
+Product List using Jinja2 Loop and Conditional Statements Create a Flask application with the following templates:base.html,home.html,products.html .Create product data containing product name, price, and availability in app.py. Use a Jinja2 for loop to display the products and conditional statements to display Available or Out of Stock. Use template inheritance and create a CSS file in the static/CSS folder. Verify the output in the browser.
+
+12.
+Create a Flask Employee Information Form containing Employee ID, Employee Name, Department, and Designation. Accept the form data using the POST method and display the submitted information on the web page.
+
+13.
+Create a Flask Contact Form containing Name, Email, Subject, and Message. Check whether all fields are filled and display an appropriate flash message.
+
+14.
+Create a Flask Event Registration Form containing Participant Name, Mobile Number, and Event Name. Provide three event options and display the submitted information using a flash message.
+
+15.
+Create a Flask Electricity Bill Form containing Consumer Name, Consumer Number, and Units Consumed. Calculate the electricity bill according to different unit slabs and display the total bill.
+
+16.
+Create a Flask Age Calculator Form that accepts a person’s Name and Date of Birth. Calculate and display the person's age on the result page. Display an appropriate flash message if the required input is missing.
+
+17.
+Create a Flask Temperature Conversion Form that accepts a temperature value and allows the user to select Celsius to Fahrenheit or Fahrenheit to Celsius. Perform the selected conversion and display the result.
+
+18.
+Create a Flask Student Attendance Form containing Student Name, Total Working Days, and Days Present. Calculate the attendance percentage and display whether the student is Eligible or Not Eligible based on a minimum attendance requirement of 75%. Display appropriate flash messages.
+
+19.
+Create a Flask Restaurant Order Form containing Customer Name, Food Item,Quantity, and Price. Calculate the subtotal, apply a 5% service charge, add 18% GST,and display the final bill. Validate the input fields and display appropriate flash messages for invalid input.
+
+20.
+Develop a Flask-based Student Management System using SQLite that creates a database with a student table containing id, name, age, and course fields, allows users to insert new student records, and displays all student records on the home page.
+
+21.
+Develop a complete Flask-based Student Management System using SQLite.
+Implement all CRUD operations:
+● Create
+● Read
+● Update
+● Delete
+Display all records in an HTML table and verify each database operation on the web browser.
